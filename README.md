@@ -6,10 +6,11 @@ Hack vulnerable Wi-Fi networks using Termux (rooted)
 ```bash
 pkg update && pkg upgrade -y
 pkg install root-repo -y
-pkg install git tsu python wpa-supplicant pixiewps iw openssl -y
+pkg install git tsu python wpa-supplicant pixiewps iw openssl python -y
 git clone https://github.com/vladimir127001/pixiefite
 cd pixiefite
 chmod +x pixiefite0.0.1.py
+sudo python pixiefite0.0.1.py -i wlan0 -K
 ```
 
 #### Help : `sudo python main --help`
